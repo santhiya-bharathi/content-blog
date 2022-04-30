@@ -45,7 +45,7 @@ export function Blogs() {
   );
 }
 
-function Bdetails({ picture, heading, summary, id, editButton }) {
+function Bdetails({ picture, heading, summary, id }) {
   const history = useHistory();
   return (
     <div className='blog-display'>
@@ -53,7 +53,7 @@ function Bdetails({ picture, heading, summary, id, editButton }) {
         <img className="blog-pic" src={picture} alt={heading} />
         <div className='blog-like-icon'>
           <p className='blog-folder-icon'><FolderOpenIcon /> Blog</p>
-          <div className='blog-folder-icon'><Like />{editButton}</div>
+          <div className='blog-folder-icon'><Like /></div>
 
         </div>
         <h2 className='blog-heading'>{heading}</h2>
